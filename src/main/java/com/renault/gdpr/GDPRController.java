@@ -14,16 +14,16 @@ public class GDPRController {
     @Autowired GDPRService gdprService;
 
     @PostMapping("/plain")
-    public String plain(@RequestBody  String text){
-        logger.info( " Data in the plain controller "+ text);
-        return gdprService.create(text);
+    public User plain(@RequestBody  User user){
+        logger.info( " Data in the plain controller "+ user);
+        return gdprService.create(user);
     }
 
     @PostMapping("/encrypt")
     @GDPR
-    public String encrypt(@RequestBody  String text){
-        logger.info( " Data in the encryption controller "+ text);
-        return gdprService.create(text);
+    public User encrypt(@RequestBody  User user){
+        logger.info( " Data in the encryption controller "+ user);
+        return gdprService.create(user);
     }
 
 }

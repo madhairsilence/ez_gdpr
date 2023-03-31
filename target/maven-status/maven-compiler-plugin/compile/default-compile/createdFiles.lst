@@ -1,6 +1,13 @@
+com\renault\gdpr\User.class
+com\renault\gdpr\GDPRInterceptor.class
+com\renault\gdpr\EncryptionService.class
+com\renault\gdpr\ApplicatonConfiguration.class
+com\renault\gdpr\EncryptionSerializer.class
+com\renault\gdpr\ResponseDecorator.class
+com\renault\gdpr\DecryptionSerializer.class
+com\renault\gdpr\GDPRService.class
+com\renault\gdpr\GDPRInterceptor$1.class
 com\renault\gdpr\GDPR.class
 com\renault\gdpr\Application.class
 com\renault\gdpr\GDPRController.class
-com\renault\gdpr\GDPRInterceptor.class
-com\renault\gdpr\EncryptionService.class
-com\renault\gdpr\GDPRService.class
+com\renault\gdpr\GDPRInterceptor$2.class

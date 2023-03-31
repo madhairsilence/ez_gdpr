@@ -19,6 +19,14 @@ public class EncryptionService {
         if( data != null ) {
             plainText = data.toString().replace(" { ENCRYPTED } ", "");
         }
-        return plainText;
+        return mask(plainText);
+    }
+
+    public Object mask( Object data ){
+        String maskedText = null;
+        String dataAsString = data.toString();
+        if( data != null )
+            maskedText = dataAsString.replace( dataAsString.substring( 1, 3 ), "XXX");
+        return maskedText;
     }
 }
