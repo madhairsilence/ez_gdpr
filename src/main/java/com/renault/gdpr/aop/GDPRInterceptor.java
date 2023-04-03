@@ -1,4 +1,4 @@
-package com.renault.gdpr;
+package com.renault.gdpr.aop;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,7 +27,7 @@ public class GDPRInterceptor {
 
     @Autowired @Qualifier("decryptor") ObjectMapper decryptor;
 
-    @Around("@annotation(GDPR)")
+    @Around("@annotation(com.renault.gdpr.annotations.GDPR)")
     public Object intercept(ProceedingJoinPoint joinPoint ) throws Throwable {
         logger.info( " Method execution begins" );
 

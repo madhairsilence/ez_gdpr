@@ -1,4 +1,4 @@
-package com.renault.gdpr;
+package com.renault.gdpr.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

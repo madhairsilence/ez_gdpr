@@ -1,29 +1,31 @@
-package com.renault.gdpr;
+package com.renault.gdpr.domain;
 
 
+import com.renault.gdpr.annotations.GDPR;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class GDPRController {
+public class UserController {
 
     private Logger logger = LoggerFactory.getLogger( "GDPRController" );
 
-    @Autowired GDPRService gdprService;
+    @Autowired
+    UserService gdprService;
 
-    @PostMapping("/plain")
-    public User plain(@RequestBody  User user){
+    @PostMapping("/user")
+    @GDPR
+    public User plain(@RequestBody User user){
         logger.info( " Data in the plain controller "+ user);
-        return gdprService.create(user);
+        return gdprService.createUser(user);
     }
 
-    @PostMapping("/encrypt")
-    @GDPR
-    public User encrypt(@RequestBody  User user){
+    @PostMapping("/piiuser")
+    public PIIUser encrypt(@RequestBody PIIUser user){
         logger.info( " Data in the encryption controller "+ user);
-        return gdprService.create(user);
+        return gdprService.createPIIUser(user);
     }
 
 }

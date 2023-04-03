@@ -1,8 +1,9 @@
-package com.renault.gdpr;
+package com.renault.gdpr.encrypt.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
+import com.renault.gdpr.encrypt.EncryptionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
