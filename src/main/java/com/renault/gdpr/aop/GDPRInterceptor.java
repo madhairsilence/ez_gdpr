@@ -37,7 +37,9 @@ public class GDPRInterceptor {
 
         for( int index = 0 ; index < params.length ; index++ ){
             aClass = params[index].getClass();
+            //flatten the Java Object to Map
             intermediateData = mapper.convertValue( params[index], new TypeReference<Map<String, Object>>() {});
+            //Encypt the Map and convert it to back to the Java Object
             params[index] = encryptor.convertValue(intermediateData, aClass);
         }
 
@@ -45,7 +47,10 @@ public class GDPRInterceptor {
 
         Object response = joinPoint.proceed(params);
 
+        //Flatten encrypted object to Map
         intermediateData = mapper.convertValue(response, new TypeReference<Map<String, Object>>() {});
+
+        //Decrypt the Map and transform to Original Return type
         response = decryptor.convertValue( intermediateData , returnType );
         logger.info ( " Method execution complete" );
 
