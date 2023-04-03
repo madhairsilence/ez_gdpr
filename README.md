@@ -9,5 +9,4 @@ This source code has two implementations , to encrypt data.
 - Custom Jackson Serialization
 
 #### Note
-- Only Mock Encryption Code is provided. It should be replaced with actual encrpytion
->>>>>>> 98d7d49 (Added readme)
+- Only Mock Encryption Code is provided. It should be replaced with actual encryption
