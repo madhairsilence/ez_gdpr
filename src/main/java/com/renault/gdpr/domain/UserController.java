@@ -18,13 +18,13 @@ public class UserController {
     @PostMapping("/user")
     @GDPR
     public User plain(@RequestBody User user){
-        logger.info( " Data in the plain controller "+ user);
+        logger.info( " Data in the User controller "+ user);
         return gdprService.createUser(user);
     }
 
     @PostMapping("/piiuser")
     public PIIUser encrypt(@RequestBody PIIUser user){
-        logger.info( " Data in the encryption controller "+ user);
+        logger.info( " Data in the PII controller "+ user);
         return gdprService.createPIIUser(user);
     }
 
