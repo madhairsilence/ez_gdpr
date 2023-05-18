@@ -1,9 +1,9 @@
-package com.renault.gdpr.conf;
+package com.mad.gdpr.conf;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.renault.gdpr.encrypt.serializer.DecryptionSerializer;
-import com.renault.gdpr.encrypt.serializer.EncryptionSerializer;
+import com.mad.gdpr.encrypt.serializer.DecryptionSerializer;
+import com.mad.gdpr.encrypt.serializer.EncryptionSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;

@@ -1,4 +1,4 @@
-package com.renault.gdpr.encrypt;
+package com.mad.gdpr.encrypt;
 
 import org.springframework.stereotype.Component;
 

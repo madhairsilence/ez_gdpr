@@ -1,4 +1,4 @@
-package com.renault.gdpr.encrypt.convertor;
+package com.mad.gdpr.encrypt.convertor;
 
 public class StringEncryptor extends FieldEncryptor<String> {
 }

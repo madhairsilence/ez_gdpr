@@ -1,4 +1,4 @@
-package com.renault.gdpr.domain;
+package com.mad.gdpr.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

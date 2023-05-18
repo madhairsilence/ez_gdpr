@@ -1,7 +1,7 @@
-package com.renault.gdpr.domain;
+package com.mad.gdpr.domain;
 
 
-import com.renault.gdpr.annotations.GDPR;
+import com.mad.gdpr.annotations.GDPR;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

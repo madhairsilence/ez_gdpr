@@ -1,4 +1,4 @@
-package com.renault.gdpr.domain;
+package com.mad.gdpr.domain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

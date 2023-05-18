@@ -1,6 +1,6 @@
-package com.renault.gdpr.domain;
+package com.mad.gdpr.domain;
 
-import com.renault.gdpr.encrypt.convertor.StringEncryptor;
+import com.mad.gdpr.encrypt.convertor.StringEncryptor;
 
 import javax.persistence.Convert;
 import javax.persistence.Entity;

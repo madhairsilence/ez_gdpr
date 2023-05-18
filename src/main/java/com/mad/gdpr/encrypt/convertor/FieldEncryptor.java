@@ -1,6 +1,6 @@
-package com.renault.gdpr.encrypt.convertor;
+package com.mad.gdpr.encrypt.convertor;
 
-import com.renault.gdpr.encrypt.EncryptionService;
+import com.mad.gdpr.encrypt.EncryptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.AttributeConverter;

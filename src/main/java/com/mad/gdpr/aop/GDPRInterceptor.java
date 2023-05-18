@@ -1,4 +1,4 @@
-package com.renault.gdpr.aop;
+package com.mad.gdpr.aop;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import java.lang.reflect.Type;
 import java.util.Map;
 
 @Aspect
@@ -27,7 +26,7 @@ public class GDPRInterceptor {
 
     @Autowired @Qualifier("decryptor") ObjectMapper decryptor;
 
-    @Around("@annotation(com.renault.gdpr.annotations.GDPR)")
+    @Around("@annotation(com.mad.gdpr.annotations.GDPR)")
     public Object intercept(ProceedingJoinPoint joinPoint ) throws Throwable {
         logger.info( " Method execution begins" );
 
